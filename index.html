@@ -8,16 +8,22 @@
   <title>Kaak & Cheese - Menu</title><!-- changes done here -->
   <meta content="" name="description">
   <meta content="" name="keywords">
-
+  <style>
+    .menu-item:hover {
+      border-color: #ffc107; /* Change border color on hover */
+      background-color: #f8f9fa; /* Change background color on hover */
+      /* Add any other styles you want to change on hover */
+    }
+  </style>
   <!-- Favicons -->
   <link href="assets/img/kaaks.jpg" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/kaaks.jpg" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -73,6 +79,17 @@
   <!-- ======= Hero Section ======= -->
   <!-- End Hero Section -->
 	<BR>
+    <style>
+      .resturant {
+        margin-top: fixed-top;
+      overflow: hidden;
+      background-color: #333;
+      position: fixed; /* Set the navbar to fixed position */
+      top: 0; /* Position the navbar at the top of the page */
+      width: 100%; /* Full width */
+}
+
+    </style>
   <main id="main">
 
     <!-- ======= About Section ======= -->
@@ -97,18 +114,122 @@
         <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
 
           <!-- End tab nav item -->
-         
-          <li class="nav-item">
-            <a href= "indexarabic.html"   >
-              <h4>Arabic</h4>
-            </a><!-- End tab nav item -->
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Menu Item Carousel</title>
+              <!-- Bootstrap CSS -->
+              <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+          </head>
+          <body>
+          
+            <div style = "margin-top: 70px; background-color: red;"class="fixed-top resturant ">
+              
+              <div class="bg-white py-1">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col">
+                              <div class="owl-carousel owl-theme child--category">
+                                  <div class="item menu-item-category" data-id="all">
+                                      <a class="nav-link active" href="#menu-starters">
+                                          <img src="assets/img/categories.png" alt="All Categories" width="50px" height="100px"><br>
+                                          All categories
+                                      </a>
+                                  </div>
+                                  <div class="item menu-item-category" data-id="category_13144">
+                                      <a class="nav-link" href="#menu-starters">
+                                          <img src="assets/img/menu6.jpeg" alt="Burgers" width="50px" height="100px">
+                                          <br>SPECIAL KAAKE
+                                      </a>
+                                  </div>
+                                  <div class="item menu-item-category" data-id="category_13139">
+                                      <a class="nav-link" href="#menu-breakfast">
+                                          <img src="assets/img/menu3.jpeg" width="50px" height="100px">
+                                          <br>KAAKE
+                                      </a>
+                                  </div>
+                                  
+                                 
+                                  <div class="item menu-item-category" data-id="category_13159">
+                                      <a class="nav-link" href="#menu-desserts">
+                                          <img src="assets/img/nutellamoz.jpeg" alt="Meal" width="50px" height="100px">
+                                          <br>Desserts
+                                      </a>
+                                  </div>
+                                  <div class="item menu-item-category" data-id="category_13160">
+                                      <a class="nav-link" href="#category_13160">
+                                          <img src="assets/img/dips.jpg" alt="Dips" width="50px" height="100px">
+                                          <br>Dips
+                                      </a>
+                                  </div>
+                                  <div class="item menu-item-category" data-id="category_13161">
+                                      <a class="nav-link" href="#category_13161">
+                                          <img src="assets/img/soft-drinks.jpg" alt="Beverages" width="50px" height="100px">
+                                          <br>Beverages
+                                      </a>
+                                  </div>
+                                  <div class="item menu-item-category" data-id="category_13161">
+                                    <a class="nav-link" href="#category_13161">
+                                        <img src="assets/img/shisha.jpg" alt="Beverages" width="50px" height="100px">
+                                        <br>Shisha
+                                    </a>
+                                </div>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+          </div>
+          <!-- End tab nav item -->
+          
+          <!-- Bootstrap JS and dependencies -->
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          
+          <!-- Add Owl Carousel JS and CSS if not included -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+          
+          <script>
+              $(document).ready(function(){
+                  $('.owl-carousel').owlCarousel({
+                      loop: true,
+                      margin: 5,
+                      nav: true,
+                      responsive: {
+                          0: {
+                              items: 2
+                          },
+                          600: {
+                              items: 4
+                          },
+                          1000: {
+                              items: 6
+                          }
+                      }
+                  });
+              });
+          </script>
+          
+          </body>
+          </html>
+          
+        
+
+
 
          <!-- End tab nav item -->
 
         </ul>
 
-        <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
-
+        <div style="margin-top: 150px;"class="tab-content" data-aos="fade-up" data-aos-delay="300">
+          
           <div class="tab-pane fade  active show" id="menu-starters">
 
             <div class="tab-header text-center">
@@ -118,39 +239,151 @@
 
             <div class="row gy-5">
 
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
+              <div class="col-lg-12 col-md-12 col-12 menu-item  border border-danger p-3">
                 
                 <h4>Special Habash</h4>
                 <p class="ingredients">
-                  Habash, Mozarella, Ketshup, Mayo , Cheddar , Barbecue.
+                  Habash, mozzarella, Ketshup, Mayo , Cheddar , Barbecue.
                 </p>
                 <p class="price">
                   250, 000 L.L
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
                 
                 <h4>Special hotdog</h4>
                 <p class="ingredients">
-                  Hotdog, Mazorella, Ketchup, Dora, Mayo , Cheddar-Khardal-Kabis
+                  Hotdog, mozzarella, Ketchup, Dora, Mayo , Cheddar-Khardal-Kabis
+                </p>
+                <p class="price">
+                  250, 000 L.L
+                </p>
+              </div>
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
+                
+                <h4>Akkawi + Martadella</h4>
+                <p class="ingredients">
+                  Akkawi, Martadella
+                </p>
+                <p class="price">
+                  180, 000 L.L
+                </p>
+              </div>
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
+                
+                <h4>Mozzarella + Martadella</h4>
+                <p class="ingredients">
+                  Mozzarella, Martadella
+                </p>
+                <p class="price">
+                  180, 000 L.L
+                </p>
+              </div><!-- Menu Item -->
+
+              <!-- Menu Item -->
+
+              <!-- Menu Item -->
+
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
+                
+                <h4>mozzarella + Habash</h4>
+                <p class="ingredients">
+                  mozzarella, Habash
+                </p>
+                <p class="price">
+                  200, 000 L.L
+                </p>
+              </div><!-- Menu Item -->
+
+              
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
+                
+                <h4>Akkawi + Fotor + Dora</h4>
+                <p class="ingredients">
+                  Akkawi, Fotor , Dora
+                </p>
+                <p class="price">
+                  180, 000 L.L
+                </p>
+              </div>
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
+                
+                <h4>Kafta</h4>
+                <p class="ingredients">
+                  mozzarella, Jebne, Dora, Mayo ,Banadoura,Kabis
+                </p>
+                <p class="price">
+                 250, 000 L.L
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
+                
+                <h4>Burger</h4>
+                <p class="ingredients">
+                  Burger, mozzarella, Cheddar, Mayo, Dora, Barbecue
                 </p>
                 <p class="price">
                   250, 000 L.L
                 </p>
               </div><!-- Menu Item -->
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
+
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
                 
-                <h4>Mozarella Habash</h4>
+                <h4>Soujouk</h4>
                 <p class="ingredients">
-                  Mozarella, Habash, Ketchup, Dora, Mayo , Cheddar-Khardal-Kabis,Barbecue
+                  Soujouk, Jebne, Kabis, Banadoura, Mayo
+                </p>
+                <p class="price">
+                 250, 000 L.L
+                </p>
+              </div>
+             
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
+                
+                <h4>Pizza tawook</h4>
+                <p class="ingredients">
+                  pizza ingredients + tawook + mozzarella<br>
+                </p>
+				<br>
+                <p class="price">
+                 250, 000 L.L
+                </p>
+              </div>
+              
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
+                
+                <h4>Tawook</h4>
+                <p class="ingredients">
+                  Tawook, Jebne, Mayo, Dora
+                </p>
+                <p class="price">
+                250, 000 L.L
+                </p>
+              </div>
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
+                
+                <h4>Fajita</h4>
+                <p class="ingredients">
+                  
+                </p>
+                <p class="price">
+                250, 000 L.L
+                </p>
+              </div><!-- Menu Item -->
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
+                
+                <h4>mozzarella Habash</h4>
+                <p class="ingredients">
+                  mozzarella, Habash, Ketchup, Dora, Mayo , Cheddar-Khardal-Kabis,Barbecue
                 </p>
                 <p class="price">
                   200, 000 L.L
                 </p>
               </div>
 
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
                 
                 <h4>Sitos Plus</h4>
                 <p class="ingredients">
@@ -161,50 +394,50 @@
                   200, 000 L.L
                 </p>
               </div>
-			  <div class="col-lg-6 col-md-6 col-6 menu-item">
+			  <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
                 
                 <h4>Pizza </h4>
                 <p class="ingredients">
-                  pizza ingredients + Mozarella<br>
+                  pizza ingredients + mozzarella<br>
                 </p>
 				<br>
                 <p class="price">
                   200, 000 L.L
                 </p>
               </div>
-			  <div class="col-lg-6 col-md-6 col-6 menu-item">
+			  <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
                 
                 <h4>Pizza tawook</h4>
                 <p class="ingredients">
-                  pizza ingredients + tawook + Mozarella<br>
+                  pizza ingredients + tawook + mozzarella<br>
                 </p>
 				<br>
                 <p class="price">
                  250, 000 L.L
                 </p>
               </div>
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
                 
                 <h4>Kafta</h4>
                 <p class="ingredients">
-                  Mozarella, Jebne, Dora, Mayo ,Banadoura,Kabis
+                  mozzarella, Jebne, Dora, Mayo ,Banadoura,Kabis
                 </p>
                 <p class="price">
                  250, 000 L.L
                 </p>
               </div>
               
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
                 
                 <h4>Burger</h4>
                 <p class="ingredients">
-                  Burger, Mozarella, Cheddar, Mayo, Dora, Barbecue
+                  Burger, mozzarella, Cheddar, Mayo, Dora, Barbecue
                 </p>
                 <p class="price">
                   250, 000 L.L
                 </p>
               </div>
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3" >
                 
                 <h4>Soujouk</h4>
                 <p class="ingredients">
@@ -215,7 +448,7 @@
                 </p>
               </div>
               
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
                 
                 <h4>Tawook</h4>
                 <p class="ingredients">
@@ -225,7 +458,7 @@
                 250, 000 L.L
                 </p>
               </div>
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
                 
                 <h4>Fajita</h4>
                 <p class="ingredients">
@@ -250,40 +483,30 @@
             </div>
 
             <div class="row gy-5">
-
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
                 
-                <h4>Akkawi</h4>
+                <h4>1 Cheese</h4>
                 <p class="ingredients">
-                  Akkawi Cheese
+                  Akkawi or Mozzarella or Halloum
                 </p>
                 <p class="price">
-                  130, 000 L.L
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-                 
-                <h4>Mozarella</h4>
-                <p class="ingredients">
-                 Mazorella Cheese
-                </p>
-                <p class="price">
-                  130, 000 L.L
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-                 
-                <h4>Halloum</h4>
-                <p class="ingredients">
-                  Halloum Cheese
-                </p>
-                <p class="price">
-                  130, 000 L.L
+                  140, 000 L.L
                 </p>
               </div>
-			  <div class="col-lg-6 col-md-6 col-6 menu-item">
+              <div class="row gy-5">
+                <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
+                  
+                  <h4>2 Cheese</h4>
+                  <p class="ingredients">
+                    Akkawi + Mozzarella <br>Halloum + Akkawi <br> Halloum + Mozzarella
+                    <br>Picon + Akkawi
+                  </p>
+                  <p class="price">
+                    160, 000 L.L
+                  </p>
+                </div>
+             
+			  <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
                  
                 <h4>Fetta</h4>
                 <p class="ingredients">
@@ -293,7 +516,7 @@
                   100, 000 L.L
                 </p>
               </div>
-			  <div class="col-lg-6 col-md-6 col-6 menu-item">
+			  <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
                 
                 <h4>Picon</h4>
                 <p class="ingredients">
@@ -303,7 +526,7 @@
                   100, 000 L.L
                 </p>
               </div>
-			  <div class="col-lg-6 col-md-6 col-6 menu-item">
+			  <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3" >
                  
                 <h4>Zaatar</h4>
                 <p class="ingredients">
@@ -311,6 +534,38 @@
                 </p>
                 <p class="price">
                   60, 000 L.L
+                </p>
+              </div>
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
+                
+                <h4>3 Cheese</h4>
+                <p class="ingredients">
+                  Akkawi, mozzarella, Cheddar
+                </p>
+                <p class="price">
+                 180, 000 L.L
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
+                
+                <h4>4 Cheese</h4>
+                <p class="ingredients">
+                  Picon, Akkawi, mozzarella, Chedar
+                </p>
+                <p class="price">
+                  200, 000 L.L
+                </p>
+              </div><!-- Menu Item -->
+
+              <div class="col-lg-12 col-md-12 col-12 menu-item border border-danger p-3">
+                
+                <h4>5 Cheese</h4>
+                <p class="ingredients">
+                  Halloum, Picon, Akkawi, mozzarella, Cheddar
+                </p>
+                <p class="price">
+                  220, 000 L.L
                 </p>
               </div><!-- Menu Item -->
 <!-- Menu Item -->
@@ -320,242 +575,13 @@
             </div>
           </div><!-- End Breakfast Menu Content -->
 
-          <div class="tab-pane fade active show" id="menu-lunch">
+          <!-- End Lunch Menu Content -->
 
-            <div class="tab-header text-center">
-              <p>Menu</p>
-              <h3>Kaake Mix</h3>
-            </div>
+         
 
-            <div class="row gy-5">
+          
+          
 
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-                
-                <h4>Akkawi + Martadella</h4>
-                <p class="ingredients">
-                  Akkawi, Martadella
-                </p>
-                <p class="price">
-                  150, 000 L.L
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-               
-                <h4>Akkawi + Mozarella</h4>
-                <p class="ingredients">
-                  Akkawi, Mozarella
-                </p>
-                <p class="price">
-                  150, 000 L.L
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-                
-                <h4>Halloun + Mozarella</h4>
-                <p class="ingredients">
-                  Halloum, Mozarella
-                </p>
-                <p class="price">
-                 150, 000 L.L
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-                
-                <h4>Mozarella + Habash</h4>
-                <p class="ingredients">
-                  Mozarella, Habash
-                </p>
-                <p class="price">
-                  160, 000 L.L
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-                
-                <h4>Picon + Akkawi</h4>
-                <p class="ingredients">
-                  Picon, Akkawi
-                </p>
-                <p class="price">
-                  150, 000 L.L
-                </p>
-              </div>
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-                
-                <h4>Akkawi + Fotor + Dora</h4>
-                <p class="ingredients">
-                  Akkawi, Fotor , Dora
-                </p>
-                <p class="price">
-                  160, 000 L.L
-                </p>
-              </div>
-              
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-                
-                <h4>3 Cheese</h4>
-                <p class="ingredients">
-                  Akkawi, Mozarella, Cheddar
-                </p>
-                <p class="price">
-                 170, 000 L.L
-                </p>
-              </div>
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-                
-                <h4>4 Cheese</h4>
-                <p class="ingredients">
-                  Picon, Akkawi, Mazorella, Chedar
-                </p>
-                <p class="price">
-                  190, 000 L.L
-                </p>
-              </div>
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-                
-                <h4>5 Cheese</h4>
-                <p class="ingredients">
-                  Halloum, Picon, Akkawi, Mazorella, Cheddar
-                </p>
-                <p class="price">
-                  210, 000 L.L
-                </p>
-              </div>
-              <!-- Menu Item -->
-
-              <!-- Menu Item -->
-
-            </div>
-          </div><!-- End Lunch Menu Content -->
-
-          <div class="tab-pane fade active show" id="menu-dinner">
-
-            <div class="tab-header text-center">
-              <p>Menu</p>
-              <h3>3 4 5 Cheese</h3>
-            </div>
-
-            <div class="row gy-5">
-
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-                
-                <h4>3 Cheese</h4>
-                <p class="ingredients">
-                  Akkawi, Mozarella, Cheddar
-                </p>
-                <p class="price">
-                 170, 000 L.L
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-                
-                <h4>4 Cheese</h4>
-                <p class="ingredients">
-                  Picon, Akkawi, Mazorella, Chedar
-                </p>
-                <p class="price">
-                  190, 000 L.L
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-                
-                <h4>5 Cheese</h4>
-                <p class="ingredients">
-                  Halloum, Picon, Akkawi, Mazorella, Cheddar
-                </p>
-                <p class="price">
-                  210, 000 L.L
-                </p>
-              </div><!-- Menu Item -->
-
-              <!-- Menu Item -->
-
-            </div>
-          </div>
-
-          <div class="tab-pane fade active show" id="menu-meat">
-
-            <div class="tab-header text-center">
-              <p>Menu</p>
-              <h3>Veggie / Chicken / Meat - Kaake</h3>
-            </div>
-
-            <div class="row gy-5">
-
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-                
-                <h4>Kafta</h4>
-                <p class="ingredients">
-                  Mozarella, Jebne, Dora, Mayo ,Banadoura,Kabis
-                </p>
-                <p class="price">
-                 250, 000 L.L
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-                
-                <h4>Burger</h4>
-                <p class="ingredients">
-                  Burger, Mozarella, Cheddar, Mayo, Dora, Barbecue
-                </p>
-                <p class="price">
-                  250, 000 L.L
-                </p>
-              </div><!-- Menu Item -->
-
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-                
-                <h4>Soujouk</h4>
-                <p class="ingredients">
-                  Soujouk, Jebne, Kabis, Banadoura, Mayo
-                </p>
-                <p class="price">
-                 250, 000 L.L
-                </p>
-              </div>
-             
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-                
-                <h4>Pizza tawook</h4>
-                <p class="ingredients">
-                  pizza ingredients + tawook + Mozarella<br>
-                </p>
-				<br>
-                <p class="price">
-                 250, 000 L.L
-                </p>
-              </div>
-              
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-                
-                <h4>Tawook</h4>
-                <p class="ingredients">
-                  Tawook, Jebne, Mayo, Dora
-                </p>
-                <p class="price">
-                250, 000 L.L
-                </p>
-              </div>
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
-                
-                <h4>Fajita</h4>
-                <p class="ingredients">
-                  
-                </p>
-                <p class="price">
-                250, 000 L.L
-                </p>
-              </div><!-- Menu Item -->
-
-              <!-- Menu Item -->
-
-            </div>
           </div>
 
 
@@ -570,7 +596,7 @@
 
             <div class="row gy-5">
 
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
+              <div class="col-lg-12 col-md-12 col-12 menu-item menu-item border border-danger p-3">
                 
                 <h4>Nutella</h4>
                 <p class="ingredients">
@@ -581,7 +607,7 @@
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
+              <div class="col-lg-12 col-md-12 col-12 menu-item border border-danger p-3">
                 
                 <h4>Nutella w Moz</h4>
                 <p class="ingredients">
@@ -592,34 +618,34 @@
                 </p>
               </div><!-- Menu Item -->
 
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
+              <div class="col-lg-12 col-md-12 col-12 menu-item border border-danger p-3">
                 
                 <h4>Nutella w Halawa</h4>
                 <p class="ingredients">
                   Chocolate Danway + Halawa
                 </p>
                 <p class="price">
-                 170, 000 L.L
+                 180, 000 L.L
                 </p>
               </div>
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
+              <div class="col-lg-12 col-md-12 col-12 menu-item border border-danger p-3">
                 
                 <h4>Knefe</h4>
                 <p class="ingredients">
                   
                 </p>
                 <p class="price">
-                 180, 000 L.L
+                 200, 000 L.L
                 </p>
               </div>
-              <div class="col-lg-6 col-md-6 col-6 menu-item">
+              <div class="col-lg-12 col-md-12 col-12 menu-item border border-danger p-3">
                 
-                <h4>Knefe + Chocolate</h4>
+                <h4>Knefe + Nutella</h4>
                 <p class="ingredients">
                   
                 </p>
                 <p class="price">
-                 220, 000 L.L
+                 250, 000 L.L
                 </p>
               </div><!-- Menu Item -->
 
